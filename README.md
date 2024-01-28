@@ -63,7 +63,7 @@ Le jeu commence par un message d'accueil engageant, suivi d'une invitation pour 
 
 Le menu principal est l'interface à travers laquelle les joueurs naviguent dans les différentes options du jeu, rendant l'expérience fluide et intuitive.
 
-- Les options disponibles sont "Jouer", "Afficher l'Histoire" et "Quitter". En cas d'entrée invalide, un message d'erreur informe le joueur et invite à une nouvelle sélection.
+- Les options disponibles sont "Commencer une partie", "Afficher l'historique" et "Quitter". En cas d'entrée invalide, un message d'erreur informe le joueur et invite à une nouvelle sélection.
 - Lorsque "Jouer" est sélectionné, les joueurs sont dirigés vers un sous-menu pour choisir le niveau de difficulté du jeu, décrit plus en détail dans la section correspondante.
 
 #### 3. Choix de la Difficulté (2 points) <a name="difficulty"></a>
