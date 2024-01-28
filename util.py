@@ -149,7 +149,7 @@ def reinitialiser_historique():
 
 
 if __name__ == "__main__":
-    print("Test des fonctions de l'historique\n")
+    print("Test des fonctions utilitaires\n")
 
     print("## Affichage de l'historique de tous les utilisateurs")
     print(lire_historique())
