@@ -196,7 +196,9 @@ historique_joueur = lire_historique_utilisateur("Alex")
 
 Dans cet exemple, deux parties ont été jouées par l'utilisateur "Alex". La première partie a eu lieu le 20 janvier 2024 à 14h30, et l'utilisateur a perdu en 130 secondes en essayant de deviner le mot "cryptographie". La deuxième partie a eu lieu le 18 janvier 2024 à 9h15, et l'utilisateur a gagné en 75 secondes en devinant le mot "soleil".
 
-**Note** : Les fonctions fournies pour vous aider à lire et à écrire dans le fichier d'historique se trouvent dans le fichier `util.py`. Vous pouvez consulter le fichier pour plus de détails et d'exemples d'utilisation.
+**Note 1** : Les fonctions fournies pour vous aider à lire et à écrire dans le fichier d'historique se trouvent dans le fichier `util.py`. Vous pouvez consulter le fichier pour plus de détails et d'exemples d'utilisation.
+
+**Note 2** : En tout temps, si vous avez besoin de réinitialiser l'historique, vous pouvez exécuter le fichier `reinitialiser_historique.py` pour supprimer la sauvegarde existante et créer un nouveau fichier d'historique vide.
 
 ### 6. Quitter le Jeu (1 point) <a name="quit"></a>
 

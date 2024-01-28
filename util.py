@@ -113,9 +113,8 @@ def valider_historique(historique: dict) -> bool:
             for partie in parties:
                 valider_partie(partie)
     except Exception as exception:
-        print("Erreur lors de la validation de l'historique.",
-              "Réinitialisation du fichier...", sep="\n")
-        reinitialiser_historique_corrompu()
+        print("Erreur lors de la validation de l'historique.")
+        reinitialiser_historique()
         raise exception
 
 
@@ -142,7 +141,28 @@ def valider_partie(partie_dict: dict) -> bool:
         raise ValueError("Le format de la date est invalide")
 
 
-def reinitialiser_historique_corrompu():
+def reinitialiser_historique():
+    print("Réinitialisation de l'historique...")
     with open(CHEMIN_HISTORIQUE, "w") as file:
         json.dump({}, file)
     print("Historique réinitialisé avec succès.")
+
+
+if __name__ == "__main__":
+    print("Test des fonctions de l'historique\n")
+
+    print("## Affichage de l'historique de tous les utilisateurs")
+    print(lire_historique())
+
+    print("\n## Ajout d'une partie jouée par John Doe")
+    enregistrer_partie("John Doe", "test", True, 30)
+    print("Partie ajoutée avec succès.")
+
+    print("\n## Affichage de l'historique des parties de John Doe")
+    print(lire_historique_utilisateur("John Doe"))
+
+    print("\n## Affichage des mots par difficulté")
+    mots = lire_dictionnaires_mots()
+    for difficulte, liste_mots in mots.items():
+        print(f"Difficulté {difficulte}: {len(liste_mots)} mots")
+        print(f"{', '.join(liste_mots)}\n")
