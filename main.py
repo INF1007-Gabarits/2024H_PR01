@@ -1,6 +1,6 @@
 from util import lire_historique_utilisateur, enregistrer_partie, lire_dictionnaires_mots
 
-
+#test
 # Squelette du menu principal :
 # Ce code peut être un bon point de départ.
 # Il est possible de le modifier à votre guise ou de l'enlever complètement pour partir de zéro.
